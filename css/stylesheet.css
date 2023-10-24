@@ -97,6 +97,7 @@ body{
 /* navbar ends */
 
 /* content below navbar */
+/* section1 */
 #info {
     background: url("gym2.jpg");
     height: 727px;
@@ -169,6 +170,8 @@ body{
     max-width: 100%;
     max-height: 150px; 
 }
+
+/* section2 */
 
 #section2 {
     display: flex;
@@ -264,25 +267,378 @@ body{
     transition: all 0.475s;
 }
 
-#section3{
-    height:600px;
-    /* background-color: black; */
+
+/* section3 */
+
+.section3{
+    height:700px;
     background-image: url("wallp.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative; 
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    color:white;
+    
+}
+h1{
+    color:white;
+    display: flex;
+    justify-content: center;
+    margin:50px;
+    
+}
+
+.container{
+    position: relative;
+    width:450px;
+    border-radius: 20px;
+    padding:40px;
+    box-sizing: border-box;
+    text-align: left;
+    margin:50px;
+    
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: left;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.btn-register {
+    position: relative;
+    overflow: hidden;
+    height: 2rem;
+    width:170px;
+    padding: 0 1.5rem;
+    border-radius: 1.2rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    margin: 0 auto;
+}
+
+.btn-register:hover::before {
+    transform: scaleX(1);
+}
+
+.btn-register-content {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-register::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(82.3deg,rgba(150, 93, 233, 1) 10.8%,rgba(99, 88, 238, 1) 94.3%);
+    transition: all 0.475s;
+}
+
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.footer-info, .footer-links {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-info h2, .footer-links h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: #222;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Media query for tablets and smaller desktops */
+@media (max-width: 1024px) {
+    #navbar ul li a {
+        padding: 5px 30px;
+    }
+    .text {
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    #sec1Text {
+        font-size: 24px;
+    }
+    .expert {
+        padding: 40px;
+    }
+    #section-2-text {
+        font-size: 40px;
+        margin-left: 150px;
+    }
+    #special,
+    #offer {
+        font-size: 40px;
+    }
+    #buy {
+        margin-left: 100px;
+    }
+    #Membership {
+        font-size: 24px;
+    }
+    .container {
+        width: 100%;
+        margin: 20px;
+        padding: 20px;
+    }
+}
+
+/* Media query for smaller devices like smartphones */
+@media (max-width: 768px) {
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        text-align: center;
+        transition: 0.4s;
+    }
+    #navbar ul.active {
+        left: 0;
+    }
+    #navbar ul li {
+        margin: 0;
+        padding: 10px 0;
+    }
+    #navbar ul li a {
+        padding: 10px 0;
+        border-radius: 0;
+    }
+    #navbar #btn-container {
+        display: block;
+        text-align: center;
+        margin: 10px;
+    }
+    .button {
+        margin: 10px;
+    }
+    .text {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    #text1 {
+        margin-bottom: 150px;
+    }
+    #text2 {
+        font-size: 3rem;
+        margin-top: -20px;
+    }
+    #sec1 {
+        height: auto;
+    }
+    #sec1Text {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .expert {
+        padding: 30px;
+    }
+    #section-2-text {
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    #special,
+    #offer {
+        font-size: 36px;
+    }
+    #buy {
+        margin-left: 50px;
+    }
+    #Membership {
+        font-size: 20px;
+    }
+    .container {
+        width: 100%;
+        margin: 20px;
+        padding: 20px;
+    }
+}
+
+/* Media query for very small screens like mobile phones */
+@media (max-width: 480px) {
+    #navbar ul li a {
+        padding: 10px 0;
+    }
+    #navbar #logo {
+        margin: 10px;
+    }
+    #text2 {
+        font-size: 2.5rem;
+    }
+    .expert {
+        padding: 20px;
+    }
+    #section-2-text {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+    #special,
+    #offer {
+        font-size: 24px;
+    }
+    #buy {
+        margin-left: 20px;
+    }
+    #Membership {
+        font-size: 20px;
+    }
+    .container {
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    #navbar ul li a {
+        padding: 10px 0;
+    }
+    #navbar #logo {
+        margin: 10px;
+    }
+    #text2 {
+        font-size: 2.5rem;
+    }
+    .expert {
+        padding: 20px;
+    }
+    #section-2-text {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+    #special,
+    #offer {
+        font-size: 24px;
+    }
+    #buy {
+        margin-left: 20px;
+    }
+    #Membership {
+        font-size: 20px;
+    }
+    .container {
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #navbar ul li a {
+        padding: 10px 0;
+    }
+    #navbar #logo {
+        margin: 10px;
+    }
+    #text2 {
+        font-size: 2.5rem;
+    }
+    .expert {
+        padding: 20px;
+    }
+    #section-2-text {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+    #special,
+    #offer {
+        font-size: 24px;
+    }
+    #buy {
+        margin-left: 20px;
+    }
+    #Membership {
+        font-size: 20px;
+    }
+    .container {
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    .button,
+    .button-buy,
+    .btn-register {
+        font-size: 16px;
+    }
 }
 
 
-
-
-
-
-
-
-
-#footer{
-    height:400px;
-    background-color: black;
-}
